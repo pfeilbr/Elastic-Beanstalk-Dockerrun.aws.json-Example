@@ -1,12 +1,15 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "nginx",
+    "Name": "elasticsearch",
     "Update": "true"
   },
   "Ports": [
     {
-      "ContainerPort": "80"
+      "ContainerPort": "9200"
+    },
+    {
+      "ContainerPort": "9300"
     }
   ]
 }
